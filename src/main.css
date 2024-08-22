@@ -41,12 +41,6 @@
     margin-right: 100px;
   }
 }
-:root {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .header {
   background-image: url("@assets/bg-bottom.png");
   max-width: 100%;
@@ -61,7 +55,7 @@
 }
 
 .backgrounds {
-  background: url(@assets/bg2.png) repeat;
+  background: url(@assets/bg2.png) no-repeat center fixed;
   background-size: contain;
 }
 
@@ -85,12 +79,8 @@
 }
 
 .item-1 {
-  display: flex;
-  flex-direction: column;
-  max-width: 50%;
   align-content: center;
-  justify-content: center;
-  padding-left: 8px;
+  padding: 8px;
 }
 
 .cta-group {
@@ -104,7 +94,7 @@
 }
 
 .hero-image {
-  height: 500px;
+  height: 480px;
 }
 
 .clients-container {
@@ -113,7 +103,6 @@
 
 .client-items {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 24px;
@@ -125,55 +114,10 @@
     width: max-content;
   }
 }
-.flex-row-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 24px;
+herader-red {
+  color: red;
 }
 
-.flex-col-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.w-50-responsive {
-  width: 48%;
-}
-
-.flex-row-container h3 {
-  margin-block-start: 0;
-}
-
-.flex-row-container img {
-  height: 48px;
-}
-
-.feature-description {
-  margin-left: 16px;
-}
-
-.responsive-divider {
-  border-right: 1px solid var(--text-primary);
-  height: 100%;
-  margin-right: 16px;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-@media (max-width: 640px) {
-  .responsive-divider {
-    border-right: none;
-    border-bottom: 1px solid var(--text-primary);
-    width: 100%;
-    margin-right: 0;
-  }
-  .w-50-responsive {
-    width: 100%;
-  }
-}
 .section {
   display: flex;
   flex-direction: column;
@@ -185,7 +129,6 @@
 
 a {
   text-decoration: none;
-  color: var(--text-header);
 }
 
 .cta-button {
@@ -197,25 +140,8 @@ a {
   padding: 12px;
 }
 
-.header-red {
-  color: var(--accent-red);
-}
-
-.header-green {
-  color: var(--accent-green);
-}
-
-.header-blue {
-  color: var(--accent-blue);
-}
-
 @media (min-width: 768px) {
   .section {
     margin: 2rem 84px;
   }
-}
-@media (min-width: 1024px) {
-  .section {
-    margin-inline: 200px;
-  }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
