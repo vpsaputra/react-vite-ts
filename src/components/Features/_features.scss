@@ -3,6 +3,7 @@
   flex-direction: row;
   // gap: 14px;
   align-items: center;
+  justify-content: center;
   margin: 24px;
 }
 
@@ -12,7 +13,7 @@
 }
 
 .w-30 {
-  // max-width: 30%;
+  max-width: 30%;
 }
 // 100% on mobile, 50% on large screen
 .w-50-responsive {
@@ -22,12 +23,17 @@
 .flex-row-container h3 {
   margin-block-start: 0;
 }
-.flex-row-container img {
+.flex-row-container img.icon {
   height: 48px;
 }
 
-// .hero-image-2 {
-// }
+.hero-image-2 {
+  width: 80%;
+}
+
+.margin {
+  margin: 48px;
+}
 
 .feature-description {
   margin-left: 16px;

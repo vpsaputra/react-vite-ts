@@ -1,6 +1,7 @@
 @import "components/Navbar/navbar.scss";
 @import "components/Header/header.scss";
 @import "components/Features/features.scss";
+@import "components/Pricing/pricing.scss";
 
 .section {
   display: flex;
@@ -23,6 +24,7 @@ a {
   color: white;
   border-radius: 24px;
   padding: 12px;
+  margin-inline: auto;
 }
 
 .header-red {
@@ -43,6 +45,6 @@ a {
 
 @media (min-width: 1024px) {
   .section {
-    margin-inline: 200px;
+    margin-inline: 148px;
   }
 }
