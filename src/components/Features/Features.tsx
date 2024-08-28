@@ -62,7 +62,7 @@ function Features() {
             </div>
           </div>
         </div>
-        <div className="margin">
+        <div className="">
           <div className="flex-row-container flex-wrap">
             <h2 className="w-50-responsive responsive-divider">
               Smart jackpots that you may love this anytime & anywhere

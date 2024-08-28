@@ -35,7 +35,7 @@ function Pricing() {
             <a href="#start-trial" className="cta-button">
               Start free trial
             </a>
-          </div>{" "}
+          </div>
           <div className="card-container">
             <div className="card-item card-item-pro">
               <div className="price">
@@ -55,7 +55,8 @@ function Pricing() {
             </div>
             <a href="#start-trial" className="cta-button">
               Start free trial
-            </a>
+            </a>{" "}
+            <a href="#start-trial">or Start 14 Days trial</a>
           </div>
         </div>
       </div>

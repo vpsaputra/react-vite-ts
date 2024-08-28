@@ -2,10 +2,13 @@
 @import "components/Header/header.scss";
 @import "components/Features/features.scss";
 @import "components/Pricing/pricing.scss";
+@import "components/Footer/footer.scss";
+@import "components/Faqs/faqs.scss";
 
 .section {
   display: flex;
   flex-direction: column;
+  margin: 32px 8px;
 }
 
 .button {
@@ -14,7 +17,8 @@
 
 a {
   text-decoration: none;
-  color: var(--text-header);
+  color: var(--text-blue);
+  color: aliceblue;
 }
 
 .cta-button {

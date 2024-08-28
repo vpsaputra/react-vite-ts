@@ -1,0 +1,60 @@
+.faqs {
+  background-image: url("@assets/bg-footer.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 480px;
+
+  padding-bottom: 64px;
+}
+
+.faq-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+  margin-bottom: 64px;
+}
+
+.faq-items details {
+  width: 80%;
+}
+
+details {
+  background-color: #f5f0f0;
+  padding: 8px 48px;
+  margin: 4px 24px;
+}
+
+details[open] > summary {
+  list-style-type: "&";
+}
+
+summary {
+  list-style-type: "+"; /* Jika marker berada di kiri */
+  font-weight: 600;
+  font-size: 1.25em;
+  display: flex; /* Marker berada di kanan */
+  justify-content: space-between;
+}
+.gap2 {
+  display: flex;
+  gap: 16px;
+}
+summary::after {
+  content: "+";
+  margin-right: 0;
+}
+
+details[open] > summary::after {
+  content: "-";
+}
+
+.transparent {
+  background-color: #f5f0f08e;
+}
+
+@media (min-width: 768px) {
+  details {
+    max-width: 60%;
+  }
+}

@@ -71,7 +71,7 @@
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
-  align-items: end;
+  align-items: flex-end;
 }
 
 .item-1 span {
@@ -260,9 +260,90 @@
   margin-block: 0;
 }
 
+.footer {
+  background-color: #09142e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  padding: 100px;
+}
+
+.social-group svg {
+  width: 36px;
+}
+
+svg:hover {
+  fill: aqua;
+}
+
+.faqs {
+  background-image: url("@assets/bg-footer.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 480px;
+  padding-bottom: 64px;
+}
+
+.faq-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+  margin-bottom: 64px;
+}
+
+.faq-items details {
+  width: 80%;
+}
+
+details {
+  background-color: #f5f0f0;
+  padding: 8px 48px;
+  margin: 4px 24px;
+}
+
+details[open] > summary {
+  list-style-type: "&";
+}
+
+summary {
+  list-style-type: "+"; /* Jika marker berada di kiri */
+  font-weight: 600;
+  font-size: 1.25em;
+  display: flex; /* Marker berada di kanan */
+  justify-content: space-between;
+}
+
+.gap2 {
+  display: flex;
+  gap: 16px;
+}
+
+summary::after {
+  content: "+";
+  margin-right: 0;
+}
+
+details[open] > summary::after {
+  content: "-";
+}
+
+.transparent {
+  background-color: rgba(245, 240, 240, 0.5568627451);
+}
+
+@media (min-width: 768px) {
+  details {
+    max-width: 60%;
+  }
+}
 .section {
   display: flex;
   flex-direction: column;
+  margin: 32px 8px;
 }
 
 .button {
@@ -271,7 +352,8 @@
 
 a {
   text-decoration: none;
-  color: var(--text-header);
+  color: var(--text-blue);
+  color: aliceblue;
 }
 
 .cta-button {
