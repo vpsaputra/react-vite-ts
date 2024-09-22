@@ -14,7 +14,9 @@ function Pricing() {
           <a href="#monthly" className="tab-item-selected">
             Monthly
           </a>
-          <a href="#annually">Annually</a>
+          <a href="#annually" className="header-blue">
+            Annually
+          </a>
         </div>
 
         <div className="card-group">

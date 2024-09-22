@@ -3,7 +3,13 @@ import appStore from "@assets/app-store.png";
 const questions = [
   {
     title: "App installation failed, how to update system information? ",
-    content: "content 1",
+    content: [
+      "Restart Your Device: Sometimes a simple restart can resolve installation issues.",
+      "Check for Updates: Go to your device settings and check for any available system updates.",
+      "Clear Cache: Navigate to the app settings and clear the cache for the app you’re trying to install.",
+      "Free Up Space: Ensure you have enough storage space available by deleting unused apps or files.",
+      "Reinstall the App: Try downloading the app again from the official app store.",
+    ],
   },
   {
     title: "Where can I Download AppLab?",
@@ -35,7 +41,15 @@ function Faqs() {
             {questions.map((item, index) => (
               <details key={index}>
                 <summary>{item.title}</summary>
-                <p>{item.content}</p>
+                {Array.isArray(item.content) ? (
+                  <ol>
+                    {item.content.map((items, indexes) => (
+                      <li key={indexes}>{items}</li>
+                    ))}
+                  </ol>
+                ) : (
+                  <p>{item.content}</p>
+                )}
               </details>
             ))}
           </div>

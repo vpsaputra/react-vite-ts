@@ -108,7 +108,7 @@ function Features() {
                 as Facebook.
               </h4>
             </div>
-            <a href="" className="cta-button">
+            <a href="#" className="cta-button">
               Learn more
             </a>
           </div>

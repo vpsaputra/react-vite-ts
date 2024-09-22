@@ -35,7 +35,7 @@ function Header() {
                   <a href="#try" className="cta-button">
                     Try for free
                   </a>
-                  <a href="" style={{ marginLeft: "8px" }}>
+                  <a href="#" style={{ marginLeft: "8px" }}>
                     Watch demo video
                   </a>
                 </div>

@@ -6,6 +6,7 @@ function SocialGroup() {
           <a
             href="https://www.facebook.com/VPSaputra"
             className="hover:text-gray-600 text-gray-300"
+            target="_blank"
           >
             <svg
               fill="#273043"
@@ -23,6 +24,7 @@ function SocialGroup() {
           <a
             href="https://www.instagram.com/VPSaputra"
             className="hover:text-gray-600 text-gray-300"
+            target="_blank"
           >
             <svg
               fill="#273043"
@@ -40,6 +42,7 @@ function SocialGroup() {
           <a
             href="https://www.github.com/vpsaputra"
             className="hover:text-gray-600 text-gray-300"
+            target="_blank"
           >
             <svg
               fill="#273043"
@@ -57,6 +60,7 @@ function SocialGroup() {
           <a
             href="https://www.youtube.com/VPSaputra"
             className="hover:text-gray-600 text-gray-300"
+            target="_blank"
           >
             <svg
               fill="#273043"
