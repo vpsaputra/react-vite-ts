@@ -1,4 +1,4 @@
-import applabLogo from "@assets/applab.png";
+import applabLogo from "@assets/AppLab.png";
 import SocialGroup from "../SocialGroup";
 function Footer() {
   return (
